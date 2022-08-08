@@ -1,0 +1,48 @@
+@import './SearchBox';
+
+.add_form {
+  width: rem(286px); // to fit grid with 5 imgs on albums fieldset
+  margin: 0 auto rem(70px);
+}
+
+.add_form h1 {
+  font-size: rem(32px);
+  margin: rem(40px) 0 rem(32px);
+  text-align: center;
+}
+
+.add_form fieldset {
+  padding: 0;
+  border: none;
+}
+
+.add_form .next-prev,
+.title_fieldset .next_btn {
+  margin: rem(32px) 0 0;
+}
+
+
+@media only screen and (min-width : 600px) {
+
+  .add_form {
+    width: rem(340px); // to fit grid with 6 imgs on albums fieldset
+  }
+
+  .add_form h1 {
+    font-size: rem(38px);
+    margin: rem(60px) 0 rem(40px);
+    text-align: center;
+  }
+
+  .add_form .next-prev,
+  .title_fieldset .next_btn {
+    margin: rem(40px) 0 0;
+  }
+
+}
+
+@import './addTitle';
+@import './addCity';
+@import './addCover';
+@import './addAlbum';
+@import './addPost';

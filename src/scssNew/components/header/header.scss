@@ -1,0 +1,119 @@
+/* =============================================
+                    HEADER
+================================================*/
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  justify-content: center;
+  background: $colorPrimary;
+  box-shadow: $box-shadow-header;
+}
+
+.header_container {
+  width: 100%;
+  height: rem(60px);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  height: rem(50px);
+  margin-left: rem(10px);
+}
+
+/* -------- Header Links -------- */
+
+.header .textLinkOrangeBg,
+.header .textLinkDarkBg {
+  line-height: rem(60px);
+  padding: 0 rem(16px);
+  margin: 0;
+  font-size: rem(20px);
+  border-radius: 0;
+}
+
+.header_avatar {
+  height: rem(34px);
+  width: rem(34px);
+  border: rem(1px) solid $grey-500;
+}
+
+.header_user_link {
+  padding: 0 rem(20px);
+  height: rem(70px);
+}
+
+.header_user_link p {
+  margin: 0;
+  max-width: rem(120px);
+  margin-left: rem(10px);
+  color: $grey-50;
+  font-size: rem(20px);
+  font-weight: 500;
+}
+
+.header_icon_link {
+  height: rem(60px);
+  width: rem(60px);
+}
+
+.header_icon_link:hover { background: $grey-900; }
+.header_icon_link:active { background: $grey-800; }
+
+.header_icon {
+  width: rem(30px);
+  height: rem(30px);
+  fill: $grey-50;
+}
+
+.nav-visitor li:nth-child(1),
+.nav-visitor li:nth-child(2) { display: none; }
+
+.nav-user li:nth-child(1) { display: none; }
+
+
+/* -------- Media Queries -------- */
+
+@media only screen and (min-width : 600px) {
+
+  .nav-visitor li:nth-child(3) { display: none;}
+  .nav-visitor li:nth-child(1),
+  .nav-visitor li:nth-child(2) {
+    display: block;
+    margin-left: rem(6px);
+  }
+
+  .nav-user li:nth-child(1) { display: block; }
+
+  .header_container {
+    width: 90%;
+    height: rem(70px);
+  }
+
+  .header_logo {
+    height: rem(56px);
+    margin-left: 0;
+  }
+
+  .header .textLinkOrangeBg,
+  .header .textLinkDarkBg {
+    padding: 0 rem(18px);
+    font-size: rem(22px);
+    line-height: rem(70px);
+  }
+
+  .header_icon_link {
+    height: rem(70px);
+    width: rem(70px);
+  }
+
+}
+
+@media only screen and (min-width : 960px) {
+
+  .header_container { width: 86%; }
+
+}

@@ -1,0 +1,62 @@
+/* ==============================================
+                    PAGES
+================================================ */
+
+.page_main {
+  padding: rem(60px) 0;
+  width: 100%;
+  max-width: rem(414px);
+  margin: 0 auto;
+}
+
+@media only screen and (min-width : 415px) {
+  .page_main {
+    width: 86%;
+  }
+}
+
+@media only screen and (min-width : 600px) {
+
+  .page_main {
+    padding: rem(70px) 0;
+    width: 84%;
+    max-width: 100%;
+  }
+
+}
+
+@media only screen and (min-width : 768px) {
+
+  .page_main {
+    width: 80%;
+  }
+
+}
+
+@media only screen and (min-width : 960px) {
+
+  .page_main {
+    width: 70%;
+    padding: rem(70px) rem(32px);
+    max-width: rem(800px);
+    height: 100%;
+    min-height: 100%;
+    min-height: 100vh;
+    border-left: rem(2px) solid $grey-100;
+    border-right: rem(2px) solid $grey-100;
+  }
+
+}
+
+
+@import './home/home';
+@import './auth/auth';
+@import './auth/msgs';
+@import './profile/profile';
+@import './edit-profile/edit-profile';
+@import './follows/follows';
+@import './search/search';
+@import './settings/settings';
+@import './feed/feed';
+@import './error/error-page';
+@import './add-trip/add';

@@ -1,0 +1,98 @@
+/* ==============================================
+                 SECONDARY NAV
+================================================ */
+
+.secondary_nav {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: rem(2px) solid $grey-100;
+  position: relative;
+}
+
+.secondary_nav ul {
+  justify-content: center;
+}
+
+.secondary_nav_2 li {
+  width: 50%;
+  padding-right: rem(8px);
+}
+
+.secondary_nav_3 li {
+  width: 33.333%;
+}
+
+.active_line_2,
+.active_line_3 {
+  height: rem(2px);
+  position: absolute;
+  bottom: -2px;
+  background: $colorPrimary;
+  transition: all .3s ease-in-out;
+}
+
+.active_line_2 {
+  width: 50%;
+}
+
+.active_line_3 {
+  width: 33.3%;
+}
+
+.position1 ~ .active_line_2 { left: 0;}
+.position2 ~ .active_line_2 { left: 50%;}
+
+.position1 ~ .active_line_3 { left: 0;}
+.position2 ~ .active_line_3 { left: 33.3%;}
+.position3 ~ .active_line_3 { left: 66.6%;}
+
+.sec_nav_link {
+  padding: rem(10px) rem(10px);
+}
+
+.ic_sec_nav {
+  height: rem(20px);
+  width: rem(20px);
+  margin-top: rem(7px);
+  margin-right: rem(5px);
+  fill: $grey-500;
+}
+
+.secondary_nav .active .ic_sec_nav {
+  transition: all .3s ease-in-out;
+  fill: $colorPrimary;
+}
+
+.secondary_nav p {
+  font-weight: 600;
+  padding-top: rem(5px);
+  color: $grey-500;
+  font-size: rem(18px);
+  transition: all .3s ease-in-out;
+}
+
+.secondary_nav .active p { color: $colorPrimary; }
+
+@media only screen and (min-width : 600px) {
+  .secondary_nav p {
+    font-size: rem(20px);
+  }
+
+  .ic_sec_nav {
+    height: rem(23px);
+    width: rem(23px);
+    margin-top: rem(7px);
+    margin-right: rem(7px);
+  }
+}
+
+// @media only screen and (min-width : 768px) {
+//   .secondary_nav p {
+//     font-size: rem(18px);
+//   }
+
+//   .ic_sec_nav {
+//     margin-top: rem(6px);
+//     margin-right: rem(5px);
+//   }
+// }

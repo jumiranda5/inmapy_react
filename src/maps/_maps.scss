@@ -1,0 +1,56 @@
+// WORLD MAP
+
+.not-visited{
+  fill: $grey-200;
+  stroke: $grey-400;
+}
+
+.fill{
+  fill: $green;
+  stroke: $greenStroke;
+}
+
+.map_container {
+  display: flex;
+  display: -ms-flexbox;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: rem(15px);
+  background: $grey-100;
+}
+
+.map_container svg {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+};
+
+@import './Americas/SouthAmerica/southAmerica';
+@import './Americas/NorthAmerica/northAmerica';
+@import './Europe/europe';
+@import './Africa/africa';
+@import './Oceania/oceania';
+
+@media only screen and (min-width : 415px) {
+  .map_container{
+    border-radius: rem(5px);
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .map_container{
+    padding: rem(32px);
+  }
+}
+
+@media only screen and (min-width : 960px) {
+  .map-container {
+    //width: 100%;
+    margin: 50px auto 40px;
+    padding: 35px 25px 25px;
+    background: #4d4d4d;
+  }
+}

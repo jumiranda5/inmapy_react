@@ -1,0 +1,85 @@
+/* ==============================================
+                    AVATAR
+================================================ */
+
+.avatar {
+  border-radius: 50%;
+}
+
+/* AVATAR SIZE */
+
+.header_avatar {
+  height: rem(34px);
+  width: rem(34px);
+}
+
+.post_avatar {
+  height: rem(34px);
+  width: rem(34px);
+}
+
+// .edit_avatar {
+//   height: rem(120px);
+//   width: rem(120px);
+// }
+
+.profile_avatar {
+  height: rem(90px);
+  width: rem(90px);
+}
+
+.user_list_avatar {
+  width: rem(50px);
+  height: rem(50px);
+}
+
+/* AVATAR BORDER */
+
+.header_avatar {
+  border: rem(1px) solid $grey-500;
+}
+
+.post_avatar,
+.user_list_avatar {
+  border: rem(1px) solid $grey-400;
+}
+
+//.edit_avatar,
+.profile_avatar {
+  border: rem(2px) solid $grey-400;
+}
+
+@media only screen and (min-width : 360px) {
+
+  .profile_avatar {
+    height: rem(96px);
+    width: rem(96px);
+  }
+
+}
+
+@media only screen and (min-width : 600px) {
+  // .edit_avatar {
+  //   width: rem(140px);
+  //   height: rem(140px);
+  // }
+
+  .profile_avatar {
+    height: rem(120px);
+    width: rem(120px);
+  }
+
+  .user_list_avatar {
+    width: rem(52px);
+    height: rem(52px);
+  }
+}
+
+@media only screen and (min-width : 960px) {
+  .profile_avatar {
+    height: rem(140px);
+    width: rem(140px);
+  }
+}
+
+

@@ -1,0 +1,104 @@
+/* =============================================
+                   TYPOGRAPHY
+================================================*/
+
+.headline {
+  font-family: $font-main-condensed;
+  font-weight: 700;
+}
+
+/* -------- Ellipsize -------- */
+
+.ellipsize {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---- Text align: center ---- */
+
+.forgot-password,
+.home_footer,
+.terms,
+.auth_form footer,
+.success_msg_container h1,
+.user_counters li,
+.profile_posts h1,
+.post_compact_title,
+.post_title  { text-align: center; }
+
+/* ---- Font weight: 400 ---- */
+
+.user_link_name,
+.success_msg_container h1 { font-weight: 400; }
+
+
+/* ---- Font weight: 500 ---- */
+
+.home_about,
+.home_footer,
+.terms a,
+.user_link_username,
+.username,
+.counter,
+.post_compact_title,
+.error_main p { font-weight: 500; }
+
+
+/* ---- Font weight: 600 ---- */
+
+.post_user_link p,
+.auth_form footer a {  font-weight: 600; }
+
+
+/* ---- Color: primary ---- */
+
+.post_user_link p,
+.auth_form footer a,
+.user_link_username,
+.username,
+.counter,
+.post_compact_title { color: $colorPrimary; }
+
+/* ---- Color: grey-700 ---- */
+
+.success_msg_container h1 { color: $grey-700;}
+
+
+/* ---- Color: grey-600 ---- */
+
+.forgot-password,
+.terms,
+.forgot-password,
+.auth_form footer,
+.forgot-form-text,
+.account_ul p,
+.account_ul label,
+.user_link_name,
+.name,
+.counter_label { color: $grey-600; }
+
+
+@import '../components/Inputs/typography';
+
+@import '../components/Links/typography';
+
+@import '../components/Buttons/typography';
+
+@import '../components/Header/typography';
+
+@import '../pages/home/typography';
+
+@import '../pages/auth/typography';
+
+@import '../pages/settings/typography';
+
+@import '../pages/follows/typography';
+
+@import '../components/UserList/typography';
+
+@import '../pages/profile/typography';
+
+@import '../components/Posts/typography';
+
+@import '../pages/feed/typography';

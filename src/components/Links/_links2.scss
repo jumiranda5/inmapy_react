@@ -1,0 +1,189 @@
+/* ==============================================
+                      LINKS
+================================================ */
+
+/* --------------- ORANGE GRAD LINKS --------------- */
+
+.header_link--login p,
+.log_page_link_login p {
+  background: $orange-grad;
+}
+
+.header_link--login p:hover,
+.log_page_link_login p:hover {
+  background: $orange-grad-darker;
+}
+
+.header_link--login p:active,
+.log_page_link_login p:active {
+  background: $orange-grad-light;
+}
+
+/* ----------------- LOG PAGE LINKS ----------------- */
+
+.log_page_link_login p,
+.log_page_link_signup p {
+  line-height: rem(44px);
+  border-radius: rem(5px);
+}
+
+.log_page_link_signup p {
+  border: 1px solid $colorPrimary;
+}
+
+/* ------------------ HEADER LINKS ------------------ */
+
+.header_link p {
+  padding: 0 rem(16px);
+  margin: 0;
+}
+
+.header_icon_link {
+  height: rem(60px);
+  width: rem(60px);
+}
+
+.header_user_link { padding-left: rem(20px);}
+
+.header_user_link p {
+  margin: 0;
+  max-width: rem(120px);
+  margin-left: rem(10px);
+}
+
+.header_icon_link:hover,
+.header_user_link:hover,
+.header_link p:hover {
+  background: $grey-800;
+}
+
+.header_user_link p:hover {
+  background: none;
+}
+
+.header_icon_link:active,
+.header_link:active p {
+  background: $grey-700;
+}
+
+.header_link--login p:hover {
+  background: $orange-grad-darker;
+}
+
+.header_link--login p:active {
+  background: $orange-grad-light;
+}
+
+@media only screen and (min-width : 600px) {
+
+  .header_link p {
+    padding: 0 rem(18px);
+  }
+
+  .header_user_link p {
+    margin-left: rem(12px);
+    margin-right: rem(20px);
+    padding: 0;
+  }
+
+  .header_icon_link {
+    height: rem(70px);
+    width: rem(70px);
+  }
+
+}
+
+/* ------------------ NAV LINKS ------------------*/
+
+.side_nav_link {
+  flex-flow: column nowrap;
+  padding: rem(6px) rem(4px);
+  width: 100%;
+}
+
+.side_nav_link p {
+  max-width: 90%;
+}
+
+.side_nav_link:hover {background: $grey-100;}
+.side_nav_link_active { background: $orange-grad; }
+.side_nav_link_active:hover {background: $orange-grad-darker;}
+
+.side_nav_link_active .side_nav_icon {
+  fill: $grey-50;
+  stroke-width: 0;
+}
+
+.side_nav_link:active .side_nav_icon_add {
+  stroke: $grey-50;
+  stroke-width: 0;
+}
+
+@media only screen and (min-width : 600px) {
+
+  .side_nav_link { padding: rem(6px) rem(4px); }
+
+}
+
+@media only screen and (min-width : 960px) {
+
+  .side_nav_link {
+    width: rem(110px);
+    height: rem(74px);
+    margin-bottom: rem(15px);
+    box-shadow: $box-shadow-1;
+    border-radius: rem(5px);
+  }
+
+  .side_nav_link:hover {background: $grey-50;}
+  .side_nav_link_active { background: $orange-grad; }
+  .side_nav_link_active:hover {background: $orange-grad-darker;}
+
+}
+
+/* ------------------ BORDER LINKS ------------------ */
+
+.link_grey_border {
+  border: rem(1px) solid $grey-400;
+  border-radius: rem(5px);
+}
+
+.link_grey_border:active {border: rem(2px) solid $grey-400;}
+
+
+/* ------------------ FORGOT PWD LINK ------------------ */
+
+.forgot_container {
+  margin: rem(40px) auto 0;
+}
+
+.forgot-password {
+  width: 60%;
+  margin: 0;
+  padding-bottom: rem(3px);
+}
+
+.arrow1,
+.arrow2 { width: 20%; }
+
+/* ------------------ SETTINGS ------------------ */
+
+
+
+/* ------------------ USER LINK ------------------ */
+
+.post_user_link p {
+  margin: 0;
+  max-width: rem(120px);
+  margin-left: rem(10px);
+}
+
+@media only screen and (min-width : 600px) {
+
+  .post_user_link p {
+    margin: 0;
+    max-width: rem(260px);
+    margin-left: rem(10px);
+  }
+
+}

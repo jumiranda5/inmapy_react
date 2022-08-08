@@ -1,0 +1,163 @@
+/* ==============================================
+                     ICONS
+================================================ */
+
+/* ***************  SIZE/PADDING  ************** */
+
+.ic_btn_next,
+.ic_btn_prev,
+.ic_sec_nav {
+  height: rem(18px);
+  width: rem(18px);
+}
+
+.ic_location {
+  width: rem(20px);
+  height: rem(20px);
+}
+
+.ic_btn_remove {
+  width: rem(22px);
+  height: rem(22px);
+}
+
+.ic_settings_exit,
+.icon_button_icon,
+.ic_edit,
+.ic_location_city  {
+  height: rem(24px);
+  width: rem(24px);
+}
+
+.header_icon,
+.side_nav_icon {
+  width: rem(30px);
+  height: rem(30px);
+}
+
+.side_nav_icon {
+  padding: rem(1px);
+}
+
+.side_nav_icon_explore,
+.side_nav_icon_add {
+  padding: 0;
+}
+
+.input_icon,
+.input_icon_pwd_visibility {
+  height: rem(44px);
+  width: rem(44px);
+  padding: rem(10px);
+}
+
+.ic_fail_msg,
+.ic_success_msg {
+  width: rem(100px);
+  height: rem(100px);
+}
+
+.ic_error_page {
+  width: rem(120px);
+  height: rem(120px);
+}
+
+@media only screen and (min-width : 600px) {
+  .ic_fail_msg,
+  .ic_success_msg {
+    width: rem(110px);
+    height: rem(110px);
+  }
+
+  .ic_error_page {
+    width: rem(130px);
+    height: rem(130px);
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .ic_sec_nav {
+    height: rem(20px);
+    width: rem(20px);
+  }
+}
+
+@media only screen and (min-width : 960px) {
+  .side_nav_icon {
+    width: rem(34px);
+    height: rem(34px);
+  }
+
+  .ic_error_page {
+    width: rem(140px);
+    height: rem(140px);
+  }
+}
+
+/* ***************  FILL  ************** */
+
+.side_nav_icon,
+.input_icon {
+  fill: none;
+}
+
+.header_icon,
+.icon_button_icon,
+.ic_btn_next,
+.ic_location {
+  fill: $grey-50;
+}
+
+.input_icon_pwd_visibility {
+  fill: $grey-400;
+}
+
+.ic_error_page,
+.ic_sec_nav {
+  fill: $grey-500;
+}
+
+.ic_btn_remove,
+.input_icon_pwd_visibility .is_pwd_visible {
+  fill: $grey-600;
+}
+
+.side_nav_icon_explore,
+.side_nav_icon_add,
+.ic_edit {
+  fill: $grey-700
+}
+
+.secondary_nav .active .ic_sec_nav,
+.ic_post_share,
+.ic_fail_msg,
+.ic_settings_exit,
+.ic_btn_prev,
+.ic_location_city {
+  fill: $colorPrimary;
+}
+
+.ic_success_msg {
+  fill: $green;
+}
+
+
+/* ***************  STROKE  ************** */
+
+.side_nav_icon {
+  stroke: $grey-700;
+  stroke-width: rem(1.2px);
+}
+
+.side_nav_icon_explore {
+  stroke-width: 0;
+}
+
+.side_nav_icon_add {
+  stroke: $grey-50;
+  stroke-width: rem(0.4px);
+}
+
+.input_icon {
+  stroke: $grey-600;
+}

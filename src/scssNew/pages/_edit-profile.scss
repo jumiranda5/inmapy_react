@@ -1,0 +1,61 @@
+/* ==============================================
+                  EDIT PROFILE
+================================================ */
+
+.edit_profile_hide {display: none;}
+
+.edit_profile .save-cancel {
+  margin-bottom: rem(40px);
+}
+
+.edit_avatar {
+  height: rem(110px);
+  width: rem(110px);
+  margin: 0 auto;
+}
+
+#edit_avatar { display: none; } // Hide default input.
+
+.edit_avatar_label {
+  cursor: pointer;
+  width: rem(120px);
+  display: block;
+  margin: 0 auto rem(40px);
+}
+
+.edit_avatar_label p {
+  cursor: pointer;
+  margin-top: rem(8px);
+  text-align: center;
+  font-weight: 500;
+  font-size: rem(18px);
+  color: $orange;
+}
+
+@media only screen and (min-width : 360px) {
+  .edit_avatar_label {
+    width: rem(120px);
+    margin: 0 auto rem(40px);
+  }
+
+  .edit_avatar {
+    width: rem(120px);
+    height: rem(120px);
+  }
+}
+
+@media only screen and (min-width : 600px) {
+  .edit_avatar_label {
+    width: rem(130px);
+    margin: 0 auto rem(40px);
+  }
+
+  .edit_avatar {
+    width: rem(130px);
+    height: rem(130px);
+  }
+
+  .edit_avatar_label p {
+    font-size: rem(20px);
+  }
+}

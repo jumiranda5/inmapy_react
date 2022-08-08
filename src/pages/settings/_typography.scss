@@ -1,0 +1,44 @@
+/* =============================================
+                  SETTINGS PAGE
+================================================*/
+
+.settings_user_email,
+.settings_privacy_policy h2 {
+  font-weight: 500;
+}
+
+.settings_page h2 {
+  font-weight: 600;
+}
+
+.settings_account_link,
+.settings_user_email { color: $grey-600; }
+
+.settings_privacy_policy h2 { color: $blue-link; }
+
+.settings_h1 { font-size: rem(28px); }
+
+.settings_page h2 { font-size: rem(18px); }
+
+.account_ul p,
+.account_ul label { line-height: rem(44px); }
+
+.account_ul p,
+.account_ul label,
+.settings_privacy_policy h2 { font-size: rem(16px); }
+
+@media only screen and (min-width : 600px) {
+
+  .settings_h1 { font-size: rem(32px); }
+
+  .settings_log_out h2,
+  .settings_page h2 { font-size: rem(20px); }
+
+  .account_ul p,
+  .account_ul label,
+  .settings_privacy_policy h2 { font-size: rem(18px); }
+
+  .account_ul p,
+  .account_ul label { line-height: rem(48px); }
+
+}

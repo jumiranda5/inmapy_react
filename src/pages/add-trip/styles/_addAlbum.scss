@@ -1,0 +1,124 @@
+.add_album_ul {
+  margin-top: rem(24px);
+}
+
+.add_album_li {
+  margin-top: rem(16px);
+  padding: rem(4px);
+  box-shadow: $box-shadow-1;
+  border-radius: rem(5px);
+  background-color: #ffffff;
+}
+
+.album_icon_container {
+  width: rem(28px);
+  height: rem(28px);
+  background: $orange-grad;
+  border-radius: 50%;
+  margin-left: rem(4px);
+}
+
+.album_icon_container .ic_location {
+  width: rem(20px);
+  height: rem(20px);
+  fill: $grey-50;
+}
+
+.album_p_container {
+  width: calc(100% - 44px);
+  margin-left: rem(12px);
+}
+
+.add_album_images_ul {
+  background-color: $grey-100;
+  height: 100%;
+  min-height: rem(58px);
+  padding: rem(2px);
+}
+
+.album_li_div {
+  height: rem(50px);
+  padding-bottom: rem(4px);
+  padding-left: rem(4px);
+}
+
+.album_img {
+  width: rem(50px);
+  height: rem(50px);
+  margin: rem(2px);
+  object-fit: cover;
+  overflow: hidden;
+}
+
+// Add image input
+
+.add_album_input { display: none; } // Hide default input.
+
+.add_album_img {
+  height: rem(50px);
+  width: rem(50px);
+  padding: rem(12px);
+  margin: rem(2px);
+  background: $grey-700;
+}
+
+.add_album_img:hover {
+  cursor: pointer;
+  background-color: $grey-800;
+}
+
+.add_album_img:active {
+  background-color: $grey-600;
+}
+
+// Remove Image
+
+.alert_remove_img_container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: $grey-100;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, .75);
+}
+
+.alert_remove_img {
+  width: rem(300px);
+  background-color: white;
+  border-radius: rem(5px);
+  box-shadow: $box-shadow-1;
+}
+
+.alert_remove_img h2 {
+  font-family: $font-main-condensed;
+  text-align: center;
+  font-size: rem(26px);
+  font-weight: 600;
+  margin: rem(18px) 0;
+}
+
+.alert_img {
+  width: rem(280px);
+  height: rem(280px);
+  margin: 0 auto;
+  background-color: black;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.alert_remove_img .cancel-btn {
+  line-height: rem(38px);
+  border-radius: 0 0 0 rem(5px);
+  padding: 0;
+}
+
+.alert_remove_img .next_btn {
+  padding-left: 0;
+  border-radius: 0 0 rem(5px) 0;
+}
+
+.alert_remove_img_container .next-prev button {
+  width: 50%;
+}

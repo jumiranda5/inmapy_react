@@ -1,0 +1,62 @@
+/* -------- LOADER -------- */
+
+.Loader {
+  background: $grey-50;
+  height: calc(100vh - 3.75rem); // 60px
+  margin-top: rem(60px);
+}
+
+.profile .Loader {
+  margin-top: 0;
+}
+
+.Loader_compass {
+  height: rem(44px);
+  width: rem(44px);
+  border-radius: rem(22px);
+  background: $orange-grad;
+}
+
+.Loader h1 {
+  font-family: $font-impact;
+  font-weight: 400;
+  font-size: rem(24px);
+  color: $grey-850;
+  margin: rem(10px);
+}
+
+.Loader svg {
+  fill: #fafafa;
+  animation: Loader-icon-spin infinite 2s linear;
+}
+
+@keyframes Loader-icon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (min-width : 600px) {
+  .Loader {
+    height: calc(100vh - 4.375rem); //70px
+    margin-top: rem(70px);
+  }
+
+  .profile .Loader {
+    margin-top: 0;
+  }
+
+  .Loader_compass {
+    height: rem(54px);
+    width: rem(54px);
+    border-radius: rem(27px);
+  }
+
+  .Loader h1 {
+    font-size: rem(28px);
+    margin: rem(15px);
+  }
+}

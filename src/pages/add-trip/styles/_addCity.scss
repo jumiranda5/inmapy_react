@@ -1,0 +1,60 @@
+.cities_empty {
+  height: rem(70px);
+  margin-top: rem(24px);
+  background-color: $grey-100;
+  color: $grey-600;
+}
+
+.cities_ul {
+  margin-top: rem(24px);
+}
+
+.city_li {
+  justify-content: space-between;
+  margin-top: rem(8px);
+  height: rem(50px);
+  padding-left: rem(4px);
+}
+
+.city_li .close_btn {
+  margin-right: rem(4px);
+}
+
+.city_li .ic_btn_remove {
+  width: rem(22px);
+  height: rem(22px);
+  fill: $grey-700;
+}
+
+.city_li_div {
+  width: calc(100% - 40px);
+}
+
+.city_li_icon_container {
+  width: rem(28px);
+  height: rem(28px);
+}
+
+.city_li_icon_container .ic_location {
+  width: rem(24px);
+  height: rem(24px);
+  fill: $green;
+}
+
+.city_p_container {
+  width: calc(100% - 40px);
+  margin-left: rem(12px);
+}
+
+.title_p,
+.city_p {
+  font-size: rem(16px);
+  font-weight: 500;
+}
+
+.subtitle_p,
+.state_p {
+  font-size: rem(14px);
+  color: $grey-600;
+  margin-top: rem(3px);
+}

@@ -1,0 +1,182 @@
+/* ==============================================
+                      FEED
+================================================ */
+
+.feed_no_trips_container {
+  margin: rem(40px) auto;
+  width: 90%;
+  height: 240px;
+  background-color: $grey-100;
+  border-radius: rem(5px);
+}
+
+.feed_empty_h1 {
+  font-family: $font-main-condensed;
+  font-weight: 600;
+  font-size: rem(32px);
+  color: $grey-500;
+  text-align: center;
+}
+
+
+/* Post List  */
+
+.post_list {
+  width: 90%;
+  max-width: rem(520px);
+  margin: rem(4px) auto;
+}
+
+.post {
+  width: 100%;
+  margin: rem(12px) auto;
+  padding: 0;
+  border-radius: rem(8px);
+  box-shadow: $box-shadow-post-2;
+  background: #ffffff;
+}
+
+/* Post Top Div  */
+
+.post_top_div {
+  height: rem(60px);
+}
+
+.post_like_btn,
+.post_share_btn {
+  margin-right: rem(6px);
+  height: rem(44px);
+  width: rem(44px);
+  background: none;
+}
+
+.ic_post_share {
+  width: rem(22px);
+  height: rem(22px);
+  fill: $colorPrimary;
+}
+
+.post_title {
+  width: calc(100% - 3.125rem); // 50px
+  padding-left: rem(56px);
+  padding-right: rem(6px);
+  margin: 0;
+  font-size: rem(24px);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Post Cover  */
+
+.post_cover,
+.post_cover_empty {
+  width: 100%;
+}
+
+.post_cover_empty {
+  padding: 28%;
+  background-color: $grey-100;
+}
+
+/* Post Bottom Div  */
+
+.post_bottom_div {
+  justify-content: space-between;
+  height: rem(60px);
+}
+
+.post_user_link { margin-left: rem(12px); }
+
+.post_user_link p {
+  font-size: rem(16px);
+  font-weight: 600;
+  color: $colorPrimary;
+  margin: 0;
+  width: rem(160px);
+  margin-left: rem(12px);
+}
+
+.ic_post_share {
+  width: rem(24px);
+  height: rem(24px);
+}
+
+.ic_post_like {
+  width: rem(26px);
+  height: rem(26px);
+  fill: none;
+  stroke: $colorPrimary;
+  stroke-width: rem(1.3px);
+}
+
+.ic_like_true {
+  fill: crimson;
+  stroke: crimson;
+}
+
+@media only screen and (min-width : 600px) {
+
+  .post_list {
+    width: 90%;
+    max-width: rem(480px);
+    margin: rem(16px) auto;
+  }
+
+  .post {
+    width: 100%;
+    margin: rem(16px) auto;
+  }
+
+  .post_top_div,
+  .post_bottom_div { height: rem(68px); }
+
+
+  /* Post Top Div  */
+
+  .post_title {
+    font-size: rem(26px);
+    width: calc(100% - 3.375rem); // 54px
+    padding-left: rem(60px);
+    padding-right: rem(10px);
+  }
+
+  .post_share_btn { margin-right: rem(10px);}
+
+
+  /* Post Bottom Div  */
+
+  .post_avatar {
+    height: rem(38px);
+    width: rem(38px);
+  }
+
+  .post_user_link p {
+    font-size: rem(18px);
+    width: rem(260px);
+    margin-left: rem(12px);
+  }
+
+  .ic_post_like {
+    width: rem(32px);
+    height: rem(32px);
+  }
+
+  .post_like_btn { margin-right: rem(12px);}
+
+  .post_user_link { margin-left: rem(16px); }
+
+}
+
+@media only screen and (min-width : 960px) {
+
+  .post_top_div,
+  .post_bottom_div {
+    height: rem(72px);
+  }
+
+  .post_title {
+    font-size: rem(28px);
+  }
+
+}
+

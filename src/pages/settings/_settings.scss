@@ -1,0 +1,106 @@
+/* ==============================================
+                SETTINGS PAGE
+================================================ */
+
+.settings_page {
+  padding-left: rem(16px);
+  padding-right: rem(16px);
+}
+
+.settings_page nav,
+.settings_h1 {
+  max-width: rem(480px);
+  margin: 0 auto;
+}
+
+.settings_h1 {
+  margin: rem(24px) auto 0;
+}
+
+.settings_page h2 {
+  margin: rem(24px) 0 0;
+}
+
+.account_ul {
+  margin-left: rem(16px);
+}
+
+.account_ul li {
+  border-bottom: rem(1px) solid $grey-100;
+}
+
+.account_ul p,
+.account_ul label {
+  padding: 0 rem(8px);
+}
+
+.settings_log_out {
+  margin-top: rem(24px);
+}
+
+.ic_settings_exit {
+  margin-left: rem(-2px);
+  margin-right: rem(6px);
+}
+
+.settings_log_out h2 {
+  margin-top: 0;
+}
+
+@media only screen and (min-width : 600px) {
+  .settings_h1 {
+    margin: rem(40px) auto 0;
+  }
+
+  .account_ul p,
+  .account_ul label {
+    padding: 0 rem(12px);
+  }
+
+  .settings_log_out {
+    margin-top: 0 rem(28px);
+  }
+
+}
+
+/* ------- toggle btn -------- */
+
+.account_ul label {
+  justify-content: space-between;
+}
+
+.toggle_btn_off,
+.toggle_btn_on  {
+  position: relative;
+  display: inline-block;
+  width: rem(36px);
+  height: rem(20px);
+  border: none;
+  background: $grey-500;
+  border-radius: rem(12px);
+}
+
+.toggle_btn_on {
+  background-color: $green;
+  box-shadow: 0 0 rem(1px) $green;
+}
+
+.toggle_btn_slider_off,
+.toggle_btn_slider_on {
+  position: absolute;
+  cursor: pointer;
+  left: rem(1px);
+  bottom: rem(1px);
+  height: rem(18px);
+  width: rem(18px);
+  background: white;
+  border-radius: rem(18px);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.toggle_btn_slider_on {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}

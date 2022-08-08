@@ -1,0 +1,45 @@
+/* =============================================
+                     BUTTONS
+================================================*/
+
+.button {
+  text-align: center;
+  font-weight: 500;
+  color: $grey-50;
+  font-family: $font-main;
+  font-size: rem(18px);
+}
+
+.cancel-btn,
+.unfollow_btn,
+.logout_btn,
+.close_btn {
+  color: $colorPrimary;
+}
+
+.close_btn p {
+  font-size: rem(16px);
+  font-weight: 600;
+}
+
+.submit-btn { line-height: rem(44px); }
+
+.cancel-btn { line-height: rem(42px); }
+
+.prev_btn { line-height: rem(38px);}
+
+.follow_btn,
+.unfollow_btn { font-size: rem(16px); }
+
+.follow_btn { line-height: rem(32px); }
+
+.unfollow_btn { line-height: rem(30px); }
+
+
+@media only screen and (min-width : 600px) {
+
+  .logout_btn {
+    font-size: rem(20px);
+  }
+
+}

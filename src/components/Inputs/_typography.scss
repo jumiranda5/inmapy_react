@@ -1,0 +1,35 @@
+
+
+/* ---- Text align: center ---- */
+
+.edit_avatar_label p,
+.add_cover_label p { text-align: center; }
+
+
+
+/* ---- Font weight: 500 ---- */
+
+.edit_avatar_label p,
+.add_cover_label p { font-weight: 500; }
+
+
+/* ---- Color: primary ---- */
+
+.input { color: $colorPrimary; }
+
+
+/* ---- Color: grey-600 ---- */
+
+.remember-label,
+.input_label,
+.add_cover_label p { color: $grey-600; }
+
+.add_cover_label p {
+  font-size: rem(18px);
+}
+
+@media only screen and (min-width : 600px) {
+  .add_cover_label p {
+    font-size: rem(20px);
+  }
+}

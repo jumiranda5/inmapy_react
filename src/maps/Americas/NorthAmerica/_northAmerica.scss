@@ -1,0 +1,53 @@
+// North America
+
+.map_container_usa {
+  position: relative;
+}
+
+.map_container_usa svg {
+  margin-bottom: rem(20px);
+}
+
+.map_container_usa_alaska {
+  position: absolute;
+  width: 24%;
+  bottom: 2%;
+  left: 2%;
+  border: 1px solid $grey-200;
+}
+
+.map_container_usa_alaska svg {
+  margin-bottom: rem(-24px);
+  padding: rem(6px);
+}
+
+.map_container_usa_hawaii {
+  position: absolute;
+  width: 18%;
+  height: 30px;
+  bottom: 2%;
+  left: 28%;
+  border: 1px solid $grey-200;
+}
+
+.map_container_usa_hawaii svg {
+  margin-left: rem(-40px);
+  margin-top: rem(-8px);
+  width: 180%;
+}
+
+@media only screen and (min-width : 600px) {
+
+  .map_container_usa_alaska svg {
+    margin-bottom: rem(-32px);
+  }
+
+  .map_container_usa_hawaii {
+    height: 40px;
+  }
+
+  .map_container_usa_hawaii svg {
+    margin-left: rem(-54px);
+    margin-top: rem(-10px);
+  }
+}

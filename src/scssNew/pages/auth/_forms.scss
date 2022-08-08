@@ -1,0 +1,117 @@
+/* ==============================================
+                  AUTH FORMS
+================================================ */
+
+.auth {
+  height: 100%;
+  min-height: 100vh;
+}
+
+/* ------- Form ------- */
+
+.auth_form {
+  margin: rem(90px) auto rem(20px);
+  width: 84%;
+  max-width: rem(320px);
+}
+
+.auth_form h1 {
+  margin: rem(30px) 0;
+}
+
+/* -------- Checkbox -------- */
+
+.ckb_container {
+  display: inline-block;
+}
+
+.remember-label {
+  margin: rem(25px) 0;
+  padding: rem(5px);
+}
+
+/* -------- Terms -------- */
+
+.terms {
+  position: relative;
+  margin: rem(30px) auto;
+  background: $grey-50;
+  z-index: 1;
+  line-height: rem(20px);
+  text-align: center;
+  color: $grey-600;
+}
+
+.terms a {
+  font-weight: 500;
+  color: $blueLink;
+}
+
+/* -------- Footer -------- */
+
+.auth_form footer {
+  margin-top: rem(40px);
+  color: $grey-600;
+  text-align: center;
+}
+
+.auth_form footer a {
+  font-weight: 600;
+  color: $colorPrimary;
+}
+
+/* ------- Forgot Pwd form ------- */
+
+.forgot-form-text {
+  margin-top: rem(-10px);
+  margin-bottom: rem(20px);
+  color: $grey-600;
+}
+
+.auth_form .save-cancel {
+  margin-top: rem(40px);
+}
+
+/* -------- Form Error -------- */
+
+.form-error {
+  width: 100%;
+  margin: rem(-10px) 0 rem(20px);
+  padding: rem(13px) rem(15px) rem(10px);
+  line-height: 20px;
+  font-size: rem(16px);
+  color: $red-900;
+  background: $red-50;
+}
+
+
+/* ======== MEDIA QUERIES ========*/
+
+@media only screen and (min-width : 600px) {
+
+  .auth {
+    display: flex;
+    display: -ms-flexbox;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .auth_form {
+    max-width: rem(420px);
+    margin: rem(120px) auto;
+    border: rem(2px) solid $grey-100;
+    border-radius: rem(5px);
+    padding: rem(50px) rem(50px) rem(40px);
+  }
+
+  .auth_form h1 {
+    margin: 0 0 rem(40px);
+  }
+
+  .auth_form footer {
+    margin-top: rem(40px);
+    margin-bottom: rem(-20px);
+  }
+
+}

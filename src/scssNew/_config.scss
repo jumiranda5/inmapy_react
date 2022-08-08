@@ -1,0 +1,18 @@
+// Font Stacks
+$font-main: 'barlow', sans-serif;
+$font-main-condensed: 'barlow-condensed','Arial Narrow Bold', sans-serif;
+
+$font-impact: 'norwester', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$font-headline: 'Bebas_Neue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+// Px to rem
+@function rem($target) {
+  @return ($target / 16px) * 1rem;
+}
+
+// Box Shadow
+$box-shadow-header: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+$box-shadow-nav: 0 0 6px 0px rgba(0, 0, 0, 0.1);
+$box-shadow-post: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+$box-shadow-post-2: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
+$box-shadow-1: 0 2px 8px 0 rgba(0, 0, 0, 0.1);

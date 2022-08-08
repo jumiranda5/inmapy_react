@@ -1,0 +1,44 @@
+// Color variables
+$grey-900: #212121;
+$grey-850: #333333;
+$grey-800: #4d4d4d;
+$grey-700: #616161;
+$grey-600: #707070;
+$grey-500: #919191;
+$grey-400: #BDBDBD;
+$grey-300: #cccccc;
+$grey-200: #dadada;
+$grey-150: #e7e7e7;
+$grey-100: #eeeeee;
+$grey-50: #fafafa;
+
+$orange: #ff4b2b;
+$orange-grad: linear-gradient(60deg, #ff416c, #ff4b2b);
+$orange-grad-darker: linear-gradient(60deg, #ff174d, #ff3714);
+$orange-grad-light: linear-gradient(60deg, #fb99b0, #f8a191);
+
+// Main colors
+$colorPrimary: $grey-850;
+$colorSecondary: $grey-600;
+$colorTextSecondary: $grey-600;
+$colorPrimaryDark: $grey-900;
+
+// Error
+$red-50: #FFEBEE;
+$red-400: #EF5350;
+$red-600: #e53935;
+$red-700: #D32F2F;
+$red-900: #B71C1C;
+
+// Link
+$blue-link: #3f51b5;
+
+//$green-success: rgb(0, 197, 105);
+//$green: rgb(0, 212, 96); //rgb(0, 218, 116)
+$green: #00da74;
+
+$greenButton: #43A047;
+$greenButtonHover: #3c9241;
+
+$nextButton: #3F51B5;
+$nextButtonHover: #311B92;

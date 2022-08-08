@@ -1,0 +1,18 @@
+@import "./scssNew/index";
+
+//@import "./styles/index";
+
+// @import "./scss/index";
+// @import "./components/styles.scss";
+// @import "./pages/styles.scss";
+
+/*====================================
+            CLEARFIX
+=====================================*/
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+

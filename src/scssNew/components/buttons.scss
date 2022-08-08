@@ -1,0 +1,294 @@
+/* ==============================================
+                   BUTTONS
+================================================ */
+
+button > * {
+  pointer-events: none;
+}
+
+button:focus { outline:0; } // TODO! => outline only on tab
+
+.button {
+  width: 100%;
+  border: none;
+  border-radius: rem(5px);
+  height: rem(44px);
+  font-family: $font-main;
+  font-weight: 500;
+  font-size: rem(18px);
+}
+
+/* ========== SUBMIT BUTTON ==========  */
+
+.submit-btn {
+  color: $grey-50;
+  background: $orange-grad;
+}
+
+.submit-btn:disabled { background: $orange-grad-light; }
+
+.submit-btn:hover { background: $orange-grad-darker; }
+
+.submit-btn .submitting,
+.border-btn .submitting {
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== BORDER BUTTON ==========  */
+
+.border-btn {
+  border: rem(1px) solid $grey-400;
+  background: none;
+  color: $colorPrimary;
+}
+
+/* ========== BUTTON GROUP - CANCEL/SAVE ==========  */
+
+.save-cancel { width: 100%; }
+
+.save-cancel button {
+  width: 49%;
+  display: inline-block;
+}
+
+.save-cancel .border-btn {
+  margin-right: 2%;
+}
+
+/* ========== NEXT BUTTON ==========  */
+
+.next_btn,
+.prev_btn {
+  height: rem(44px);
+  color: $grey-50;
+}
+
+.next_btn {
+  background: $nextButton;
+  padding-left: rem(20px);
+}
+
+.prev_btn {
+  padding-right: rem(20px);
+  background-color: $grey-700;
+}
+
+.ic_btn_next,
+.ic_btn_prev {
+  height: rem(18px);
+  width: rem(18px);
+}
+
+.ic_btn_next { fill: white; }
+.ic_btn_prev { fill: white; }
+
+.next_btn .ic_btn_next {
+  margin: rem(2px) 0 0 rem(6px);
+}
+
+.prev_btn .ic_btn_prev {
+  margin: rem(2px) rem(6px) 0;
+}
+
+.next_btn:hover { background: $nextButtonHover; }
+.next_btn:disabled { background: $grey-400; }
+.prev_btn:hover { background: $grey-800; }
+
+.next_btn .submitting {
+  justify-content: center;
+  align-items: center;
+  height: rem(40px);
+}
+
+.next-prev {
+  justify-content: space-between;
+}
+
+.next-prev button { width: 49%; }
+
+/* ========== ICON BUTTON ==========  */
+
+// Close btn
+.ic_btn_close  {
+  height: rem(24px);
+  width: rem(24px);
+  fill: $colorPrimary;
+}
+
+.close_btn {
+  width: auto;
+  height: rem(44px);
+  background: none;
+}
+
+.close_btn p {
+  padding-bottom: rem(0px);
+  padding-right: rem(4px);
+  font-size: rem(16px);
+  font-weight: 600;
+  color: $colorPrimary;
+}
+
+.post_share_btn,
+.post_like_btn,
+.edit_btn {
+  height: rem(44px);
+  width: rem(44px);
+}
+
+.input_btn {
+  border-radius: 0 rem(5px) rem(5px) 0;
+}
+
+.logout_btn {
+  width: auto;
+  padding: 0 0 rem(10px);
+}
+
+.edit_btn {
+  background: none;
+}
+
+.icon_button_icon  {
+  height: rem(24px);
+  width: rem(24px);
+  fill: $grey-50;
+}
+
+
+// /* ========== BUTTON ==========  */
+
+// .cancel-btn,
+// .unfollow_btn,
+// .post_share_btn,
+// .post_like_btn,
+// .logout_btn,
+// .close_btn { background: none; }
+
+// .follow_btn,
+// .submit-btn {
+//   background: $orange-grad;
+// }
+
+// .follow_btn:disabled,
+// .submit-btn:disabled {
+//   background: $orange-grad-light;
+// }
+
+// .follow_btn:hover,
+// .submit-btn:hover {
+//   background: $orange-grad-darker;
+// }
+
+// /* ========== SUBMIT BUTTON ==========  */
+
+// .submit-btn .submitting {
+//   justify-content: center;
+//   align-items: center;
+//   height: rem(44px);
+// }
+
+// /* ========== CANCEL BUTTON ==========  */
+
+// .cancel-btn {
+//   border: rem(1px) solid $grey-400;
+// }
+
+// /* ========== BUTTON GROUP - CANCEL/SAVE ==========  */
+
+// .next-prev,
+// .save-cancel {
+//   width: 100%;
+// }
+
+// .save-cancel button {
+//   width: 49%;
+//   display: inline-block;
+// }
+
+// .save-cancel .cancel-btn {
+//   margin-right: 2%;
+// }
+
+// .prev_btn { padding-right: rem(20px);}
+
+// .next-prev {
+//   justify-content: space-between;
+// }
+
+// .next-prev button { width: 48%; }
+
+// .prev_btn .ic_btn_prev {
+//   margin: 0 rem(4px) 0;
+// }
+
+// /* ========== ICON BUTTON ==========  */
+
+// .post_share_btn,
+// .post_like_btn,
+// .edit_btn {
+//   height: rem(44px);
+//   width: rem(44px);
+// }
+
+// .input_btn {
+//   border-radius: 0 rem(5px) rem(5px) 0;
+// }
+
+// .logout_btn {
+//   width: auto;
+//   padding: 0 0 rem(10px);
+// }
+
+// .close_btn {
+//   //background: lightgreen;
+//   width: auto;
+//   height: rem(44px);
+// }
+
+// .close_btn p {
+//   padding-bottom: rem(0px);
+//   padding-right: rem(4px);
+//   font-size: rem(16px);
+//   font-weight: 600;
+// }
+
+// .edit_btn {
+//   background: none;
+// }
+
+// /* ========== NEXT BUTTON ==========  */
+
+// .next_btn {
+//   line-height: rem(40px);
+//   background: $nextButton;
+//   padding-left: rem(20px);
+// }
+
+// .next_btn .ic_btn_next {
+//   margin: rem(2px) rem(4px) 0;
+// }
+
+// .next_btn:hover { background: $nextButtonHover; }
+
+// .next_btn:disabled { background: $grey-500; }
+
+// .next_btn .submitting {
+//   justify-content: center;
+//   align-items: center;
+//   height: rem(40px);
+// }
+
+// /* ========== FOLLOW BUTTON ==========  */
+
+// .unfollow_btn {
+//   border: rem(1px) solid $grey-400;
+// }
+
+// .follow_btn .submitting,
+// .unfollow_btn .submitting {
+//   justify-content: center;
+//   align-items: center;
+//   height: rem(32px);
+// }

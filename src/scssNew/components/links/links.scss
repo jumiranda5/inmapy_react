@@ -1,0 +1,74 @@
+/* ==============================================
+                    TEXT LINKS
+================================================ */
+
+.textLink,
+.textLinkBlue,
+.textLinkOrangeBg,
+.textLinkDarkBg,
+.textLinkBlackBorder ,
+.textLinkGreyBorder,
+.textLinkOrangeBgCorner { font-weight: 500; }
+
+
+// text link simple
+
+.textLink { color: $colorPrimary; }
+
+.textLinkBlue { color: $blueLink; }
+
+.textLinkGrey { color: $grey-600; }
+
+
+// text link with bg or border
+
+.textLinkOrangeBg,
+.textLinkDarkBg,
+.textLinkBlackBorder ,
+.textLinkGreyBorder {
+  text-align: center;
+  line-height: rem(44px);
+  border-radius: rem(5px);
+  font-size: rem(18px);
+}
+
+// text link with bg
+
+.textLinkOrangeBg,
+.textLinkDarkBg { color: $grey-50; }
+
+.textLinkOrangeBg { background: $orange-grad; }
+.textLinkOrangeBg:hover { background: $orange-grad-darker; }
+.textLinkOrangeBg:active { background: $orange-grad-light; }
+
+.textLinkDarkBg { background: $colorPrimary; }
+.textLinkDarkBg:hover { background: $grey-900; }
+.textLinkDarkBg:active { background: $grey-800; }
+
+
+// text link with border
+
+.textLinkBlackBorder,
+.textLinkGreyBorder { color: $colorPrimary; }
+
+.textLinkBlackBorder { border: rem(1px) solid $colorPrimary; }
+
+.textLinkGreyBorder { border: rem(1px) solid $grey-400; }
+
+
+/* ------------------ FORGOT PWD LINK ------------------ */
+
+.forgot_container {
+  margin: rem(40px) auto 0;
+}
+
+.forgot-password {
+  width: 60%;
+  margin: 0;
+  padding-bottom: rem(3px);
+  text-align: center;
+  color: $grey-600;
+}
+
+.arrow1,
+.arrow2 { width: 20%; }

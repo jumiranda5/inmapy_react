@@ -1,0 +1,47 @@
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+
+const Malta = React.memo(({countrySubdivisions}) => {
+
+  useEffect(() => {
+
+    console.log("==== Malta ====");
+
+    if (countrySubdivisions) {
+
+      for (let i = 0; i < countrySubdivisions.length; i++) {
+        const countrySubdivision = countrySubdivisions[i];
+
+        const code = "MT-00";
+
+        console.log(`state: ${countrySubdivision} / ${code}`);
+
+        const divPath = document.getElementById(code);
+        divPath.classList.add("fill");
+
+
+      }
+    }
+  }, [countrySubdivisions]);
+
+
+  return (
+    <div className="map_container">
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 884">
+        <g id="Malta">
+
+          <path className="not-visited" id="MT-00" admin="Malta" iso-a2="MT" sov-a3="MLT" d="M896.219837,882.547871L896.219837,842.955758L909.148113,815.904144L949.628450,770.811742L985.446129,790.679523L999.434100,739.961328L989.049092,661.511253L949.628449,597.164152L874.814005,565.246138L860.826036,562.498911L861.037975,530.314872L858.070830,498.257621L844.930616,473.394111L769.056476,446.303206L681.525696,371.035537L638.290155,353.753551L432.285509,329.923431L465.983800,300.067158L481.243403,292.209662L504.980565,287.756971L504.980565,263.920658L463.864410,267.849877L427.410913,279.768128L394.136502,300.198114L361.074027,329.923431L388.414150,363.049309L403.249877,414.104461L414.694578,527.567267L414.694578,627.247138L422.748258,642.548858L459.625632,662.557413L467.891250,672.234187L516.001390,748.458638L627.905148,810.415062L753.372996,849.750880L843.023165,858.636537L854.467867,865.692575L896.219837,882.547871Z M190.675125,0.000000L31.508984,24.123321L0.565900,34.873191L2.473351,62.139113L12.010602,97.265881L3.956922,131.994656L46.344710,159.512192L97.633931,181.655093L151.254483,196.328614L199.576561,199.996862L245.355371,189.778041L315.295217,157.808813L361.074027,155.974393L392.864869,132.780911L342.211463,78.916683L258.283644,24.909911L190.675125,0.000000Z " />
+
+        </g>
+      </svg>
+
+    </div>
+  );
+});
+
+Malta.propTypes = {
+  countrySubdivisions: PropTypes.array.isRequired
+};
+
+export default Malta;

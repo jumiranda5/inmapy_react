@@ -1,0 +1,123 @@
+/* ==============================================
+                    INPUTS
+================================================ */
+
+.input_container {
+  width: 100%;
+  margin: rem(18px) auto 0;
+  position: relative;
+}
+
+.input {
+  filter: none; /* for firefox autofill */
+  width: 100%;
+  height: rem(44px);
+  margin-top: rem(8px);
+  padding: rem(10px);
+  background: $grey-50;
+  border: rem(1px) solid $grey-400;
+  border-radius: rem(5px);
+  color: $colorPrimary;
+}
+
+.input:focus {
+  background-color: $grey-100;
+  border: 1px solid $grey-600;
+  outline: none;
+  border-radius: rem(5px); /*5px*/
+}
+
+/* ----- Inputs with icons ----- */
+
+.icon_input,
+.pwd_input { padding-left: rem(40px); }
+
+.pwd_input { padding-right: rem(40px);}
+
+.input_icon,
+.input_icon_pwd_visibility {
+  height: rem(44px);
+  width: rem(44px);
+  padding: rem(10px);
+  position: absolute;
+  bottom: 0;
+}
+
+.input_icon {
+  fill: none;
+  stroke: $grey-600;
+  left: 0;
+}
+
+.input_icon_pwd_visibility {
+  fill: $grey-400;
+  right: 0;
+}
+
+.input_icon_pwd_visibility .is_pwd_visible { fill: $grey-600; }
+
+.remember-label,
+.input_label { color: $grey-600; }
+
+/* ----- Input Errors ----- */
+
+.input_error {
+  border: rem(1px) solid $red-600;
+}
+
+.input_error_msg {
+  padding: rem(5px);
+  margin-top: rem(5px);
+  background-color: $red-50;
+  color: $red-900;
+  font-size: rem(14px);
+}
+
+/* -------- Search Input -------- */
+
+.search_input_container {
+  position: relative;
+}
+
+.search_input_container input {
+  padding: 0 rem(50px) 0 rem(16px);
+}
+
+.search_input_container button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: rem(44px);
+  height: rem(44px);
+}
+
+@media only screen and (min-width : 600px) {
+  .add_cover_label p {
+    font-size: rem(20px);
+  }
+}
+
+/* -------- Select Input -------- */
+
+.select_input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;       /* Remove default arrow */
+}
+
+.select_input_container {
+  position: relative;
+}
+
+.select_input {
+  height: 42px;
+  width: 100%;
+  color: $colorPrimary;
+  background-color: $grey-50;
+  padding: 0 rem(16px);
+  margin-top: rem(8px);
+}
+
+.select_input option{
+  height: rem(44px);
+}

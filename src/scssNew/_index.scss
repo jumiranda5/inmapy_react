@@ -1,0 +1,39 @@
+// Base
+@import 'normalize';
+@import 'fonts';
+@import 'colors';
+@import 'config';
+@import 'base';
+
+
+// Components
+@import './components/avatar';
+@import './components/links/links.scss';
+@import './components/header/header.scss';
+@import './components/side-nav';
+@import './components/inputs.scss';
+@import './components/buttons.scss';
+@import './components/loader';
+@import './components/list-loader';
+@import './components/image-editor';
+@import './components/userList';
+@import './components/secondary-nav';
+// done
+@import '../maps/maps';
+
+// Page
+@import './pages/home';
+@import './pages/error-page.scss';
+@import './pages/auth/log-page';
+@import './pages/auth/forms';
+@import './pages/auth/msgs';
+@import './pages/edit-profile';
+@import './pages/profile/profile';
+@import './pages/follows';
+@import './pages/search';
+// Pages (done)
+@import '../pages/add-trip/styles/addStyles';
+@import '../pages/feed/feed';
+
+// Animation
+@import './animation';

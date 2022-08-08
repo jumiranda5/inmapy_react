@@ -1,0 +1,15 @@
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 113 14.1"><defs>
+ <style>.cls-1{
+      fill:none;
+      stroke-miterlimit:10;
+      stroke-width:1.5px;
+      stroke:#333333;
+    }
+    .cls-2{
+      fill:#333333;
+    }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_13" x1="62.28" y1="7.8" x2="62.28" y2="6.3" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff4b2b"/><stop offset="0.95" stop-color="#ff4268"/><stop offset="1" stop-color="#ff416c"/></linearGradient>
+    <linearGradient id="Gradiente_sem_nome_13-2" x1="6.09" y1="7.8" x2="6.09" y2="6.3" xlink:href="#Gradiente_sem_nome_13"/></defs><title>arrow1-1px</title><line class="cls-1" x1="11.57" y1="7.05" x2="113" y2="7.05"/>
+    <polygon class="cls-2" points="12.18 6.31 8.53 0 6.83 0 10.47 6.31 8.76 6.31 5.12 0 3.41 0 7.06 6.31 5.35 6.31 1.71 0 0 0 3.64 6.31 1.9 6.31 1.9 7.79 3.64 7.79 0 14.1 1.71 14.1 5.35 7.79 7.06 7.79 3.41 14.1 5.12 14.1 8.76 7.79 10.47 7.79 6.83 14.1 8.53 14.1 12.18 7.79 12.18 6.31"/></svg>

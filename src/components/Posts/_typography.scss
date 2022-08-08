@@ -1,0 +1,15 @@
+/* ========== Compact Post List ========== */
+
+.post_compact_title { font-size: rem(14px); }
+
+@media only screen and (min-width : 415px) {
+  .post_compact_title {
+    font-size: rem(16px);
+  }
+}
+
+@media only screen and (min-width : 960px) {
+  .post_compact_title {
+    font-size: rem(18px);
+  }
+}

@@ -1,0 +1,315 @@
+/* =============================================
+                 HEADER SHRINK
+================================================*/
+
+.header,
+.header_container,
+.header .textLinkOrangeBg,
+.header .textLinkDarkBg,
+.header_icon_link,
+.header_icon,
+.header_avatar,
+.header_user_link,
+.header_user_link p,
+.header_logo { transition: all 0.3s ease-in-out; }
+
+.shrink .header_container{ height: rem(50px); }
+
+.shrink .header_logo { height: rem(42px);}
+
+.shrink .textLinkOrangeBg,
+.shrink .textLinkDarkBg {
+  font-size: rem(18px);
+  line-height: rem(50px);
+}
+
+.shrink .header_icon {
+  width: rem(26px);
+  height: rem(26px);
+}
+
+.shrink .header_icon_link {
+  height: rem(50px);
+  width: rem(50px);
+}
+
+@media only screen and (min-width : 600px) {
+
+  .shrink .textLinkOrangeBg,
+  .shrink .textLinkDarkBg {
+    line-height: rem(56px);
+    font-size: rem(20px);
+  }
+
+  .shrink .header_user_link p { font-size: rem(18px); }
+
+  .shrink .header_user_link { height: rem(56px);}
+
+  .shrink .header_container{ height: rem(56px); }
+
+  .shrink .header_logo { height: rem(48px);}
+
+  .shrink .header_avatar {
+    height: rem(30px);
+    width: rem(30px);
+  }
+
+  .shrink .header_icon_link {
+    height: rem(56px);
+    width: rem(56px);
+  }
+
+}
+
+/* =============================================
+                 SIDE NAV HOVER
+================================================*/
+
+@media only screen and (min-width : 960px) {
+
+  .side_nav_link,
+  .side_nav_link p,
+  .side_nav_icon {
+    transition: all .2s ease-in-out;
+  }
+
+  .side_nav_link:hover,
+  .side_nav_link_active:hover {
+    background: $grey-50;
+    width: rem(126px);
+    height: rem(81px);
+    transform: translate(rem(-7px));
+    margin-bottom: rem(8px);
+  }
+
+  .side_nav_link:hover p {
+    font-size: rem(18px);
+  }
+
+  .side_nav_link:hover .side_nav_icon {
+    width: rem(36px);
+    height: rem(36px);
+  }
+
+  .side_nav_link_active { background: $orange-grad; }
+  .side_nav_link_active:hover {background: $orange-grad-darker;}
+}
+
+/* =============================================
+                   ADD CITY
+================================================*/
+
+.animate_last_city {
+  animation: addCity 0.3s ease-in normal;
+}
+
+.animate_remove_city {
+  animation: removeCity 0.6s ease-in normal;
+}
+
+@-webkit-keyframes addCity {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, -1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+  }
+}
+
+@keyframes addCity {
+  0% {
+    opacity: 0;
+    transform: translate(0, -1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes removeCity {
+  0% {
+    opacity: 1;
+    height: rem(50px);
+  }
+  50% {
+    opacity: 0;
+    height: rem(50px);
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@keyframes removeCity {
+  0% {
+    opacity: 1;
+    height: rem(50px);
+  }
+  50% {
+    opacity: 0;
+    height: rem(50px);
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+/* =============================================
+                REMOVE FOLLOWER
+================================================*/
+
+.animate_remove_user {
+  animation: removeUser 0.6s ease-in normal;
+}
+
+@-webkit-keyframes removeUser {
+  0% {
+    opacity: 1;
+    height: rem(70px);
+  }
+  50% {
+    opacity: 0;
+    height: rem(70px);
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@keyframes removeUser {
+  0% {
+    opacity: 1;
+    height: rem(70px);
+  }
+  50% {
+    opacity: 0;
+    height: rem(70px);
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@media only screen and (min-width : 600px) {
+
+  @-webkit-keyframes removeUser {
+    0% {
+      opacity: 1;
+      height: rem(74px);
+    }
+    50% {
+      opacity: 0;
+      height: rem(74px);
+    }
+    100% {
+      opacity: 0;
+      height: 0;
+    }
+  }
+
+  @keyframes removeUser {
+    0% {
+      opacity: 1;
+      height: rem(74px);
+    }
+    50% {
+      opacity: 0;
+      height: rem(74px);
+    }
+    100% {
+      opacity: 0;
+      height: 0;
+    }
+  }
+
+}
+
+/* =============================================
+                  BUTTON LOADER
+================================================*/
+
+.loader {
+  margin-right: rem(7px);
+  border: rem(2px) solid $grey-50;
+  border-top: rem(2px) solid #fb99b0;
+  border-radius: 50%;
+  width: rem(16px);
+  height: rem(16px);
+  animation: spin 2s linear infinite;
+}
+
+.next_btn .loader {
+  border: rem(2px) solid $grey-50;
+  border-top: rem(2px) solid $grey-500;
+}
+
+.unfollow_btn .loader {
+  border: rem(2px) solid $grey-700;
+  border-top: rem(2px) solid $grey-50;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* =============================================
+                  LIKE BUTTON
+================================================*/
+
+.ic_like_true {
+  animation: like 0.5s ease-in-out forwards;
+}
+
+@keyframes like {
+  0% {
+    width: rem(16px);
+    height: rem(16px);
+  }
+  25% {
+    width: rem(28px);
+    height: rem(28px);
+  }
+  50% {
+    width: rem(20px);
+    height: rem(20px);
+  }
+  100% {
+    width: rem(26px);
+    height: rem(26px);
+  }
+}
+
+@media only screen and (min-width : 600px) {
+
+  @keyframes like {
+    0% {
+      width: rem(22px);
+      height: rem(22px);
+    }
+    25% {
+      width: rem(34px);
+      height: rem(34px);
+    }
+    50% {
+      width: rem(26px);
+      height: rem(26px);
+    }
+    100% {
+      width: rem(32px);
+      height: rem(32px);
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.success_msg_container {
+  width: 92%;
+  max-width: rem(390px);
+  margin: rem(100px) auto;
+  background: #ffffff;
+  border-radius: rem(5px);
+  box-shadow: $box-shadow-1;
+  padding: rem(30px);
+}
+
+.ic_fail_msg,
+.ic_success_msg {
+  width: rem(100px);
+  height: rem(100px);
+  display: block;
+  margin: 0 auto rem(20px);
+}
+
+.ic_success_msg {
+  fill: $green;
+}
+
+.ic_fail_msg {
+  fill: $colorPrimary;
+}
+
+.success_msg_container h1 {
+  margin-bottom: rem(30px);
+  line-height: rem(22px);
+  font-size: rem(20px);
+  text-align: center;
+  font-weight: 400;
+}
+
+.success_msg_container .link_grey_border {
+  display: block;
+  width: rem(240px);
+  margin: 0 auto;
+  color: $colorPrimary;
+  font-weight: 500;
+  font-size: rem(18px);
+  text-align: center;
+  border: 1px solid $grey-400;
+  border-radius: rem(5px);
+  line-height: rem(40px);
+}
+
+@media only screen and (min-width: 360px)  {
+  .success_msg_container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 600px)  {
+
+  .success_msg_container {
+    margin: rem(60px) auto;
+    max-width: rem(440px);
+    padding: rem(40px);
+  }
+
+  .success_msg_container h1 {
+    max-width: rem(480px);
+    margin: 0 auto rem(30px);
+    font-size: rem(22px);
+  }
+
+  .ic_fail_msg,
+  .ic_success_msg {
+    width: rem(110px);
+    height: rem(110px);
+  }
+
+}

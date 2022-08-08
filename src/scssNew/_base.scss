@@ -1,0 +1,186 @@
+/* =============================================
+                     BASE
+================================================*/
+
+* { box-sizing: border-box; }
+
+html {
+  min-height: 100%;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  background: $grey-50;
+  font-family: $font-main;
+  color: $colorPrimary;
+}
+
+ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+a { text-decoration: none; }
+
+p { margin: 0; }
+
+button { cursor: pointer; }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* -------- Visually Hidden -------- */
+
+.visually-hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+/* -------- Ellipsize -------- */
+
+.ellipsize {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* -------- HEADLINES -------- */
+
+.headline {
+  font-family: $font-main-condensed;
+  font-weight: 700;
+  font-size: rem(36px);
+}
+
+@media only screen and (min-width : 600px) {
+  .headline { font-size: rem(40px); }
+}
+
+
+/* -------- IMAGES -------- */
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  image-orientation: none;
+}
+
+.image-fit,
+.image-fit-circle {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-fit-circle { border-radius: 50%; }
+
+/* -------- FLEX -------- */
+
+.flex-row,
+.flex-column,
+.flex-center-row,
+.flex-center-column,
+.flex-center-row-vertical,
+.flex-center-column-vertical {
+  display: flex;
+  display: -ms-flexbox;
+}
+
+.flex-row,
+.flex-center-row,
+.flex-center-row-vertical { flex-flow: row wrap; }
+
+.flex-column,
+.flex-center-column,
+.flex-center-column-vertical { flex-flow: column wrap; }
+
+.flex-center-row,
+.flex-center-column {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-column-vertical { justify-content: center; }
+
+.flex-center-row-vertical { align-items: center; }
+
+
+/* -------- Page Body -------- */
+// Can't do that in "body" because of home page
+.page-body {
+  padding-top: rem(60px);
+  padding-bottom: rem(60px);
+}
+
+@media only screen and (min-width : 600px) {
+  .page-body {
+    padding-top: rem(70px);
+  }
+}
+
+/* -------- For pages with side nav -------- */
+.page_main {
+  padding: rem(60px) 0;
+  width: 100%;
+  max-width: rem(414px);
+  margin: 0 auto;
+}
+
+@media only screen and (min-width : 415px) {
+  .page_main {
+    width: 86%;
+  }
+}
+
+@media only screen and (min-width : 600px) {
+
+  .page_main {
+    padding: rem(70px) 0;
+    width: 84%;
+    max-width: 100%;
+  }
+
+}
+
+@media only screen and (min-width : 768px) {
+
+  .page_main {
+    width: 80%;
+  }
+
+}
+
+@media only screen and (min-width : 960px) {
+
+  .page_main {
+    margin-left: rem(150px);
+    padding: rem(70px) rem(32px);
+    max-width: rem(800px);
+    height: 100%;
+    min-height: 100%;
+    min-height: 100vh;
+    border-left: rem(2px) solid $grey-100;
+    border-right: rem(2px) solid $grey-100;
+  }
+
+}
+
+@media only screen and (min-width : 1120px) {
+
+  .page_main {
+    margin: 0 auto;
+  }
+
+}

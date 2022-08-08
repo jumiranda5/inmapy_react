@@ -1,0 +1,156 @@
+/* =============================================
+                  SIDE NAV
+================================================*/
+
+.hide-nav { display: none; }
+
+.side_nav_container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: none;
+  width: 100%;
+  box-shadow: $box-shadow-nav;
+  z-index: 1;
+}
+
+.side_nav_container li {
+  width: 20%;
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width : 960px) {
+
+  .side_nav_container ul{
+    width: rem(112px); // => for hover animation
+  }
+
+  .side_nav_container {
+    position: fixed;
+    bottom: 0;
+    left: 2%;
+    top: 0;
+    padding-top: rem(100px);
+    width: auto;
+    box-shadow: none;
+  }
+
+  .side_nav_container ul { flex-flow: column nowrap;}
+
+  .side_nav_container li { width: 100%; }
+
+}
+
+@media only screen and (min-width : 1100px) {
+
+  .side_nav_container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    padding-top: rem(100px);
+    width: calc((100% - 800px)/2);
+  }
+
+  .side_nav_container nav {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .side_nav_container ul {
+    display: inline-block;
+  }
+
+}
+
+/* ------------------ NAV LINKS ------------------*/
+
+.side_nav_link {
+  flex-flow: column nowrap;
+  padding: rem(6px) rem(4px);
+  width: 100%;
+}
+
+.side_nav_link p {
+  max-width: 90%;
+  font-weight: 500;
+  color: $grey-700;
+  font-size: rem(12px);
+}
+
+.side_nav_link_active p { color: $grey-50; }
+
+.side_nav_icon {
+  width: rem(30px);
+  height: rem(30px);
+  padding: rem(1px);
+  fill: none;
+  stroke: $grey-700;
+  stroke-width: rem(1.2px);
+}
+
+.side_nav_icon_explore,
+.side_nav_icon_add {
+  padding: 0;
+  fill: $grey-700
+}
+
+.side_nav_icon_explore {
+  stroke-width: 0;
+}
+
+.side_nav_icon_add {
+  stroke: $grey-50;
+  stroke-width: rem(0.4px);
+}
+
+.side_nav_link:hover {background: $grey-100;}
+.side_nav_link_active { background: $orange-grad; }
+.side_nav_link_active:hover {background: $orange-grad-darker;}
+
+.side_nav_link_active .side_nav_icon {
+  fill: $grey-50;
+  stroke-width: 0;
+}
+
+.side_nav_link:active .side_nav_icon_add {
+  stroke: $grey-50;
+  stroke-width: 0;
+}
+
+
+
+@media only screen and (min-width : 600px) {
+
+  .side_nav_link { padding: rem(6px) rem(4px); }
+
+  .side_nav_link p {
+    font-size: rem(14px);
+  }
+
+}
+
+@media only screen and (min-width : 960px) {
+
+  .side_nav_link {
+    width: rem(110px);
+    height: rem(74px);
+    margin-bottom: rem(15px);
+    box-shadow: $box-shadow-1;
+    border-radius: rem(5px);
+    background: $grey-50;
+  }
+
+  .side_nav_link p {
+    font-size: rem(16px);
+  }
+
+  .side_nav_icon {
+    width: rem(34px);
+    height: rem(34px);
+  }
+
+  .side_nav_link_active { background: $orange-grad; }
+  .side_nav_link_active:hover {background: $orange-grad-darker;}
+
+}

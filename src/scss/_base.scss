@@ -1,0 +1,116 @@
+/* =============================================
+                     BASE
+================================================*/
+
+* { box-sizing: border-box; }
+
+html {
+  min-height: 100%;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  background: $grey-50;
+  font-family: $font-main;
+  color: $colorPrimary;
+}
+
+ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+a { text-decoration: none; }
+
+p { margin: 0; }
+
+button { cursor: pointer; }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* -------- Visually Hidden -------- */
+
+.visually-hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+/* -------- IMAGES -------- */
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  image-orientation: none;
+}
+
+.image-fit,
+.image-fit-circle {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-fit-circle { border-radius: 50%; }
+
+/* -------- FLEX -------- */
+
+.flex-row,
+.flex-column,
+.flex-center-row,
+.flex-center-column,
+.flex-center-row-vertical,
+.flex-center-column-vertical {
+  display: flex;
+  display: -ms-flexbox;
+}
+
+.flex-row,
+.flex-center-row,
+.flex-center-row-vertical { flex-flow: row wrap; }
+
+.flex-column,
+.flex-center-column,
+.flex-center-column-vertical { flex-flow: column wrap; }
+
+.flex-center-row,
+.flex-center-column {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-column-vertical { justify-content: center; }
+
+.flex-center-row-vertical { align-items: center; }
+
+
+/* -------- Page Body -------- */
+// Can't do that in "body" because of home page
+.page-body {
+  padding-top: rem(60px);
+  padding-bottom: rem(60px);
+}
+
+@media only screen and (min-width : 600px) {
+  .page-body {
+    padding-top: rem(70px);
+  }
+}
+
+// @media only screen and (min-width : 600px) {
+//   .page-body {
+//     padding-left: rem(200px);
+//   }
+// }

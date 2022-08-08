@@ -1,0 +1,37 @@
+/* ==============================================
+                      LINKS
+================================================ */
+
+.orangeLink { background: $orange-grad; }
+.orangeLink:hover { background: $orange-grad-darker; }
+.orangeLink:active { background: $orange-grad-light; }
+
+.darkLink { background: $colorPrimary; }
+.darkLink:hover { background: $grey-800; }
+.darkLink:active { background: $grey-700; }
+
+.blackBorderLink {
+  text-align: center;
+  font-size: rem(18px);
+  font-weight: 500;
+  color: $colorPrimary;
+  border: rem(1px) solid $colorPrimary;
+  border-radius: rem(5px);
+}
+
+/* ------------------ FORGOT PWD LINK ------------------ */
+
+.forgot_container {
+  margin: rem(40px) auto 0;
+}
+
+.forgot-password {
+  width: 60%;
+  margin: 0;
+  padding-bottom: rem(3px);
+  text-align: center;
+  color: $grey-600;
+}
+
+.arrow1,
+.arrow2 { width: 20%; }

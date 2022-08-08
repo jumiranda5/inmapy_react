@@ -1,0 +1,48 @@
+/* ==============================================
+                  LOG PAGE
+================================================ */
+
+.error_main {
+  width: 80%;
+  margin: rem(80px) 0;
+}
+
+.error_main p {
+  color: $grey-500;
+  font-size: rem(20px);
+  margin-top: rem(12px);
+}
+
+.ic_error_page {
+  width: rem(120px);
+  height: rem(120px);
+  fill: $grey-500;
+}
+
+@media only screen and (min-width : 600px) {
+
+  .error_main {
+    max-width: rem(400px);
+    margin: rem(120px) 0;
+  }
+
+  .error_main p {
+    font-size: rem(22px);
+  }
+}
+
+@media only screen and (min-width : 960px) {
+
+  .error_page {
+    height: 100vh;
+  }
+
+  .error_main {
+    max-width: rem(400px);
+    margin: 0;
+  }
+
+  .error_main p {
+    font-size: rem(24px);
+  }
+}

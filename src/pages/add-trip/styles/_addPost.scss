@@ -1,0 +1,85 @@
+// Title container
+
+.add_post_title_container {
+  height: rem(70px);
+  margin-top: rem(32px);
+  border: 1px solid $grey-200;
+  border-radius: rem(5px);
+  //margin-bottom: rem(24px);
+}
+
+.post_cover_img {
+  width: rem(70px);
+  height: rem(70px);
+  border-radius: rem(5px) 0 0 rem(5px);
+  background-color: $grey-100;
+}
+
+.add_post_cover_empty {
+  padding: rem(10px);
+}
+
+.add_post_p_container {
+  width: calc(100% - 100px);
+  padding-left: rem(12px);
+  padding-right: rem(12px);
+  align-items: center;
+}
+
+.add_post_p_container .title_p {
+  font-family: $font-main-condensed;
+  font-weight: 700;
+  font-size: rem(20px);
+  text-transform: uppercase;
+}
+
+// Map
+
+.add_post_container .map_container {
+  width: 100%;
+  //height: rem(285px);
+  padding: rem(20px);
+  border-radius: rem(5px);
+  padding: rem(24px);
+}
+
+.add_post_container .map_container_ecuador {
+  width: 100%;
+  height: rem(286px);
+  padding: rem(20px);
+  border-radius: rem(5px);
+}
+
+// Cities
+
+.add_post_cities_ul {
+  margin: rem(32px) 0;
+}
+
+.add_post_cities_ul li {
+  margin-bottom: rem(12px);
+  padding: 0 rem(6px);
+}
+
+.add_post_cities_ul .ic_location {
+  width: rem(24px);
+  height: rem(24px);
+  fill: $green;
+}
+
+// Albums
+
+.post_albums_ul {
+  margin: rem(32px) 0;
+}
+
+@media only screen and (min-width : 600px) {
+
+  .add_post_container .map_container {
+    width: 100%;
+    //height: rem(340px);
+    padding: rem(30px);
+    border-radius: rem(5px);
+  }
+
+}

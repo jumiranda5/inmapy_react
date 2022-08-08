@@ -1,0 +1,59 @@
+/* -------- Cover Input -------- */
+
+#add_cover { display: none; } // Hide default input.
+
+.add_cover_label {
+  cursor: pointer;
+  display: block;
+  width: rem(260px);
+  margin: 0 auto;
+}
+
+.add_cover_image_container {
+  width: rem(282px);
+  height: rem(282px);
+  background-color: $grey-100;
+  border-radius: rem(5px);
+  border: rem(1px) solid $grey-200;
+}
+
+.add_cover_label:active .add_cover_image_container {
+  border: rem(1px) solid $grey-600;
+}
+
+.add_cover_label p {
+  margin-top: rem(10px);
+  text-align: center;
+  font-weight: 500;
+  color: $grey-600;
+  font-size: rem(18px);
+}
+
+.add_cover_img {
+  height: rem(64px);
+  width: rem(64px);
+}
+
+.add_cover_img_chosen {
+  height: 100%;
+  width: 100%;
+  border-radius: rem(5px);
+}
+
+.add_cover_label {
+  width: rem(282px);
+}
+
+
+@media only screen and (min-width : 600px) {
+
+  .add_cover_label {
+    width: rem(340px);
+  }
+
+  .add_cover_image_container {
+    width: rem(340px);
+    height: rem(340px);
+  }
+
+}

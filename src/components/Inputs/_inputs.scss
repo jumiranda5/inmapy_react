@@ -1,0 +1,215 @@
+/* ==============================================
+                    INPUTS
+================================================ */
+
+.input_container {
+  width: 100%;
+  margin: rem(18px) auto 0;
+  position: relative;
+}
+
+.input {
+  filter: none; /* for firefox autofill */
+  width: 100%;
+  height: rem(44px);
+  margin-top: rem(8px);
+  padding: rem(10px);
+  background: $grey-50;
+  border: rem(1px) solid $grey-400;
+  border-radius: rem(5px);
+  color: $colorPrimary;
+}
+
+.input:focus {
+  background-color: $grey-100;
+  border: 1px solid $grey-600;
+  outline: none;
+  border-radius: rem(5px); /*5px*/
+}
+
+/* ----- Inputs with icons ----- */
+
+.icon_input,
+.pwd_input { padding-left: rem(40px); }
+
+.pwd_input { padding-right: rem(40px);}
+
+.input_icon,
+.input_icon_pwd_visibility {
+  height: rem(44px);
+  width: rem(44px);
+  padding: rem(10px);
+  position: absolute;
+  bottom: 0;
+}
+
+.input_icon {
+  fill: none;
+  stroke: $grey-600;
+  left: 0;
+}
+
+.input_icon_pwd_visibility {
+  fill: $grey-400;
+  right: 0;
+}
+
+.input_icon_pwd_visibility .is_pwd_visible { fill: $grey-600; }
+
+.remember-label,
+.input_label { color: $grey-600; }
+
+
+/* ----- Multiline inputs ----- */
+
+/* ======== Errors ======== */
+
+.input_error {
+  border: rem(1px) solid $red-600;
+}
+
+.input_error_msg {
+  padding: rem(5px);
+  margin-top: rem(5px);
+  background-color: $red-50;
+  color: $red-900;
+  font-size: rem(14px);
+}
+
+
+// .input_multiline { height: rem(120px); }
+
+// /* -------- Avatar Input -------- */
+
+// #edit_avatar { display: none; } // Hide default input.
+
+// .edit_avatar_label {
+//   cursor: pointer;
+//   width: rem(120px);
+//   display: block;
+//   margin: 0 auto rem(30px);
+// }
+
+// .edit_avatar_label p {
+//   cursor: pointer;
+//   margin-top: rem(8px);
+// }
+
+// @media only screen and (min-width : 600px) {
+//   .edit_avatar_label {
+//     width: rem(140px);
+//     margin: 0 auto rem(40px);
+//   }
+// }
+
+// /* -------- Cover Input -------- */
+
+// #add_cover { display: none; } // Hide default input.
+
+// .add_cover_label {
+//   cursor: pointer;
+//   display: block;
+//   width: rem(260px);
+//   margin: 0 auto;
+// }
+
+// .add_cover_image_container {
+//   width: rem(260px);
+//   height: rem(260px);
+//   background-color: $grey-100;
+//   border-radius: rem(5px);
+//   border: rem(1px) solid $grey-200;
+// }
+
+// .add_cover_label:active .add_cover_image_container {
+//   border: rem(1px) solid $grey-600;
+// }
+
+// .add_cover_label p {
+//   margin-top: rem(10px);
+// }
+
+// .add_cover_img {
+//   height: rem(64px);
+//   width: rem(64px);
+// }
+
+// .add_cover_img_chosen {
+//   height: 100%;
+//   width: 100%;
+//   border-radius: rem(5px);
+// }
+
+
+// /* -------- Add Album Input -------- */
+
+// .add_album_input { display: none; } // Hide default input.
+
+// .add_album_img {
+//   height: rem(50px);
+//   width: rem(50px);
+//   padding: rem(12px);
+//   margin: rem(2px);
+//   background: $grey-700;
+// }
+
+// .add_album_img:hover {
+//   background-color: $grey-500;
+// }
+
+// .add_album_img:active {
+//   background-color: $grey-600;
+// }
+
+// /* -------- Select Input -------- */
+
+// .select_input {
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;       /* Remove default arrow */
+// }
+
+// .select_input_container {
+//   position: relative;
+// }
+
+// .select_input {
+//   height: 42px;
+//   width: 100%;
+//   color: $colorPrimary;
+//   background-color: $grey-50;
+//   padding: 0 rem(16px);
+//   margin-top: rem(8px);
+// }
+
+// .select_input option{
+//   height: rem(44px);
+// }
+
+
+// /* -------- Search Input -------- */
+
+// .search_input_container {
+//   position: relative;
+// }
+
+// .search_input_container button {
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+//   width: rem(44px);
+//   height: rem(44px);
+// }
+
+
+// /* ======== Errors ======== */
+
+// .input_error {
+//   border: rem(2px) solid $red-600;
+// }
+
+// .input_error_msg {
+//   padding: rem(5px);
+//   margin-top: rem(5px);
+//   background-color: $red-50;
+// }

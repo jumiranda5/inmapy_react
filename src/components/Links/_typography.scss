@@ -1,0 +1,55 @@
+/* ==============================================
+                      LINKS
+================================================ */
+
+/* ---- Text align ---- */
+
+.link_grey_border,
+.log_page_link_login,
+.log_page_link_signup  { text-align: center; }
+
+.side_nav_link p { font-size: rem(12px); }
+
+/* ---- Font size ---- */
+
+.log_page_link_login p,
+.log_page_link_signup p {
+  font-size: rem(18px);
+}
+
+/* ---- Font weight ---- */
+
+.link_grey_border,
+.side_nav_link,
+.side_nav_link_active p,
+.header_link p,
+.terms a,
+.log_page_link_login p,
+.log_page_link_signup p { font-weight: 500; }
+
+/* ---- Color ---- */
+
+.side_nav_link_active p,
+.header_link p,
+.log_page_link_login p { color: $grey-50; }
+
+.link_grey_border,
+.side_nav_link,
+.log_page_link_signup p { color: $colorPrimary; }
+
+.side_nav_link { color: $grey-700;}
+
+.terms a { color: $blue-link; }
+
+
+@media only screen and (min-width : 600px) {
+  .side_nav_link p {
+    font-size: rem(14px);
+  }
+}
+
+@media only screen and (min-width : 960px) {
+  .side_nav_link p {
+    font-size: rem(16px);
+  }
+}

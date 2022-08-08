@@ -1,0 +1,246 @@
+/* ==============================================
+                    USER
+================================================ */
+
+.user {
+  width: 100%;
+  margin: rem(24px) auto;
+}
+
+.user_container {
+  padding: 0 rem(16px);
+}
+
+// -------- Name container --------
+
+.name_container {
+  width: calc(100% - 5.625rem); // 90px
+  padding-left: rem(18px);
+}
+
+.name,
+.username { width: 100%; }
+
+.name { margin-top: rem(3px);}
+
+//  -- Button --
+.user .unfollow_btn,
+.user .follow_btn,
+.user .textLinkGreyBorder {
+  display: block;
+  width: 100%;
+  margin-top: rem(12px);
+}
+
+.user .follow_btn { height: rem(30px); }
+
+.user .textLinkGreyBorder { line-height: rem(30px); }
+
+.user .follow_btn,
+.user .textLinkGreyBorder {
+  font-size: rem(16px);
+}
+
+// -------- Counters --------
+
+.user_counters { margin-top: rem(24px); }
+
+.user_counters li {
+  width: 25%;
+  padding: 0 rem(3px);
+}
+
+.counter_label {
+  margin-top: rem(3px);
+  padding-bottom: rem(2px); // estava cortando as pernas dos 'p's e 'g's (?)
+}
+
+// -------- Typography --------
+
+.username { font-size: rem(20px); }
+
+.counter { font-size: rem(16px); }
+
+.username,
+.counter {
+  font-weight: 500;
+  color: $colorPrimary;
+}
+
+.name,
+.counter_label {
+  font-size: rem(14px);
+  color: $grey-600;
+}
+
+.counter_label,
+.counter { text-align: center; }
+
+
+@media only screen and (min-width : 360px) {
+
+  .name_container { width: calc(100% - 6rem); } // 96px
+
+  .user .follow_btn { height: rem(34px); }
+
+  .user .textLinkGreyBorder { line-height: rem(34px); }
+
+  .counter { font-size: rem(18px); }
+
+}
+
+@media only screen and (min-width : 400px) {
+  .user_container { padding: 0 rem(20px); }
+  .name_container { padding-left: rem(20px); }
+}
+
+@media only screen and (min-width : 600px) {
+
+  .user {
+    margin: rem(32px) auto;
+  }
+
+  .user_container {
+    padding: 0 rem(24px);
+  }
+
+  .name_container {
+    width: calc(100% - 7.5rem); // 120px
+    padding-left: rem(32px);
+  }
+
+  .user .unfollow_btn,
+  .user .follow_btn,
+  .user .textLinkGreyBorder{
+    width: rem(280px);
+    margin-top: rem(14px);
+  }
+
+  .name,
+  .username { max-width: rem(300px); }
+
+  .name {
+    margin-top: rem(4px);
+    font-size: rem(16px);
+  }
+
+  .user .textLinkGreyBorder { margin-top: rem(15px); }
+
+  .username { font-size: rem(20px); }
+
+  .counter { font-size: rem(20px); }
+
+  .counter_label { font-size: rem(18px); }
+
+  .user .follow_btn { height: rem(36px); }
+  .user .textLinkGreyBorder { line-height: rem(36px); }
+
+  .user .follow_btn,
+  .user .textLinkGreyBorder {
+    font-size: rem(18px);
+  }
+
+}
+
+@media only screen and (min-width : 768px) {
+
+  .user {
+    margin: rem(40px) auto rem(32px);
+  }
+
+  .user_container {
+    padding: 0 rem(16px);
+  }
+
+  // -------- Counters --------
+
+  .user_counters {
+    margin-left: rem(16px);
+    margin-top: rem(24px);
+  }
+
+  .user_counters li {
+    padding: 0;
+    width: auto;
+    display: inline-block;
+    margin-right: rem(28px);
+  }
+
+  .counter,
+  .counter_label {
+    float: left;
+    margin: 0;
+    padding: rem(3px);
+  }
+
+  .counter {
+    margin-right: rem(3px);
+  }
+
+  .counter_label {
+    max-width: rem(110px);
+  }
+
+  .counter,
+  .counter_label { line-height: 30px; }
+
+  .counter,
+  .counter_label { font-size: rem(18px); }
+}
+
+@media only screen and (min-width : 960px) {
+
+  .user {
+    margin: rem(40px) auto;
+  }
+
+  .user_container {
+    padding: 0 rem(16px);
+  }
+
+  .name_container {
+    width: calc(100% - 8.75rem); // 140px
+    padding-left: rem(32px);
+  }
+
+  .name,
+  .username { max-width: rem(340px); }
+
+
+  .name {
+    margin-top: rem(5px);
+  }
+
+  .user .unfollow_btn,
+  .user .follow_btn,
+  .user .textLinkGreyBorder {
+    width: rem(280px);
+    margin-top: rem(16px);
+  }
+
+  // -------- Counters --------
+
+  .user_counters {
+    margin-left: rem(16px);
+    margin-top: rem(24px);
+  }
+
+  .user_counters li {
+    margin-right: rem(28px);
+  }
+
+  .counter {
+    margin-right: rem(6px);
+  }
+
+  .counter_label {
+    max-width: rem(120px);
+  }
+
+
+  // .username { font-size: rem(22px); }
+
+  // .counter,
+  // .counter_label { font-size: rem(20px); }
+
+}

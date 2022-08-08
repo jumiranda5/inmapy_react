@@ -1,0 +1,93 @@
+.map_container_finland,
+.map_container_faroe,
+.map_container_sweden,
+.map_container_GB,
+.map_container_albania,
+.map_container_luxemburgo,
+.map_container_liechtenstein {
+  height: rem(380px);
+}
+
+.map_container_italy svg {
+  margin-bottom: rem(-20px);
+}
+
+// Portugal
+.map_container_port {
+  position: relative;
+  padding: rem(15px);
+  height: rem(400px);
+}
+
+.map_container_port_port{
+  margin-right: rem(-60px);
+};
+
+.map_container_portugal_acores {
+  position: absolute;
+  top: rem(8px);
+  left: rem(8px);
+  width: rem(80px);
+  height: rem(60px);
+  padding: rem(8px);
+  border: rem(1px) solid $grey-400;
+};
+
+.map_container_portugal_madeira {
+  position: absolute;
+  top: rem(76px);
+  left: rem(8px);
+  width: rem(60px);
+  height: rem(60px);
+  padding: rem(6px);
+  border: 1px solid $grey-400;
+}
+
+.map_container_portugal_madeira svg{
+  margin-bottom: rem(-50px);
+}
+
+// Espanha
+
+.map_container_spain {
+  position: relative;
+  padding: rem(15px);
+}
+
+.map_container_spain_canary {
+  position: absolute;
+  bottom: rem(6px);
+  left: rem(6px);
+  width: rem(100px);
+  height: rem(50px);
+  padding: rem(6px);
+  border: 1px solid $grey-400;
+}
+
+.map_container_spain_spain {
+  margin-bottom: rem(30px);
+  margin-right: rem(-20px);
+}
+
+@media only screen and (min-width : 600px) {
+  .map_container_finland,
+  .map_container_faroe,
+  .map_container_sweden,
+  .map_container_GB,
+  .map_container_albania,
+  .map_container_luxemburgo,
+  .map_container_liechtenstein {
+    height: rem(400px);
+  }
+
+  .map_container_italy svg {
+    margin-bottom: rem(-30px);
+  }
+
+  .map_container_spain_canary {
+    width: rem(120px);
+    height: rem(60px);
+    padding: rem(8px);
+    border: 1px solid $grey-400;
+  }
+}
